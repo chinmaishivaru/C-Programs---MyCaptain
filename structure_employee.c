@@ -8,9 +8,9 @@ typedef struct employee
   float salary;
 }emp;
 
-void print(emp k[2])
+void print(emp k[20])
 {
-    for(int i=0;i<2;i++)
+    for(int i=0;i<20;i++)
     {
         printf("Employee Number: %d\n",k[i].empno);
         printf("Employee Name: %s\n",k[i].empname);
@@ -23,7 +23,7 @@ int main()
 {
     emp a[20];
     printf("Enter the details of employees\n");
-    for(int i=0;i<2;i++)
+    for(int i=0;i<20;i++)
     {
         printf("Employee Number : ");
         scanf("%d",&a[i].empno);
